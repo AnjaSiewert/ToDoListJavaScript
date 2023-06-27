@@ -1,13 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-    <title>ToDoList</title>
     <meta charset="UTF-8">
+    <title>ToDoListe mit JavaScript</title>
+    <meta name="description" content="JavaScript ToDo-Liste">
+    <meta name="author" content="Anja">
+    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <h1>To Do List</h1>
-  <script>
+    <div class="intro">
+        <h1>ToDo Liste</h1>
+    </div>
+    <div class="hilfetext">
+        <p>Gib Text im Eingabefeld ein, um Aufgaben zur Liste hinzuzufügen</p>
+        <p>Klicke auf eine Aufgabe, um die als erledigt zu markieren.</p>
+        <p>Klicke auf "X", um eine Aufgabe aus der Liste zu entfernen.</p>
+    </div>
+    <div id="nutzereingabe">
+        <input id="userInput" type="text" placeholder="Neue Aufgabe..." maxlength="27">
+        <button id="enter">🖊️
+        </button>
+    </div>
+    <!-- Leere Liste -->
+    <div class="listItem">
+        <ul class="list">
+            <li>Eintrag für Styling und CSS Code</li>
+        </ul>
+    </div>
+  <script src="js/code.js">
         "use strict";
     </script>
 </body>
