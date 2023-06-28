@@ -17,4 +17,11 @@ function addListAfterClick () {
     }
 };
 
+function addListafterKeypress (event) {
+    if (input.value.length > 0 && event.which === 13) {
+        createListElement();
+    } 
+};
+
 enterButton.addEventListener("click", addListAfterClick);
+input.addEventListener("keypress", addListafterKeypress);
