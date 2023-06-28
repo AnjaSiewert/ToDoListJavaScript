@@ -9,6 +9,12 @@ function createListElement () {
     listElement.appendChild(document.createTextNode(input.value));
     list.appendChild(listElement);
     input.value = "";
+
+    function crossOut() {
+        listElement.classList.toggle("done");
+    };
+
+    listElement.addEventListener("click", crossOut);
 };
 
 function addListAfterClick () {
