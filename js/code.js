@@ -15,6 +15,15 @@ function createListElement () {
     };
 
     listElement.addEventListener("click", crossOut);
+
+    const deleteButton = document.createElement("button");
+    deleteButton.appendChild(document.createTextNode("X"));
+    listElement.appendChild(deleteButton);
+    deleteButton.addEventListener("click", deleteListItem);
+
+    function deleteListItem() {
+        listElement.classList.add("delete");
+    };
 };
 
 function addListAfterClick () {
